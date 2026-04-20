@@ -1,0 +1,72 @@
+{
+  "name": "mozjpeg-neo",
+  "version": "9.0.0",
+  "description": "mozjpeg wrapper that makes it seamlessly available as a local dependency",
+  "keywords": [
+    "compress",
+    "image",
+    "imagemin",
+    "img",
+    "jpeg",
+    "jpg",
+    "minify",
+    "mozjpeg",
+    "optimize"
+  ],
+  "homepage": "https://github.com/llcawc/mozjpeg-neo",
+  "license": "MIT",
+  "author": {
+    "name": "imagemin",
+    "url": "https://github.com/imagemin"
+  },
+  "maintainers": [
+    "llcawc by pasmurno"
+  ],
+  "bin": {
+    "mozjpeg": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "types",
+    "vendor",
+    "package.json"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./install": "./dist/install.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "postinstall": "node ./dist/install.js",
+    "test": "vitest --run",
+    "ver": "npx mozjpeg -version",
+    "work": "npx mozjpeg -outfile test/output.jpg test/input.jpg",
+    "start": "node test/index.js",
+    "lint": "oxlint",
+    "fix": "oxlint --fix",
+    "check": "oxfmt --check",
+    "fmt": "oxfmt",
+    "typecheck": "tsc -p . --noEmit",
+    "validate": "oxlint && tsc --noEmit",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "execa": "^9.6.1"
+  },
+  "devDependencies": {
+    "@types/imagemin": "^9.0.1",
+    "@types/node": "^25.6.0",
+    "@typescript/native-preview": "7.0.0-dev.20260420.1",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
+    "tsdown": "^0.21.9",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
