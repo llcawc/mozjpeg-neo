@@ -1,8 +1,9 @@
 # mozjpeg-neo
 
-[![npm version](https://img.shields.io/npm/v/mozjpeg-neo.svg)](https://www.npmjs.com/package/mozjpeg-neo)
-[![npm downloads](https://img.shields.io/npm/dm/mozjpeg-neo.svg)](https://www.npmjs.com/package/mozjpeg-neo)
+[![npm version](https://img.shields.io/npm/v/mozjpeg-neo.svg?style=flat&logo=npm)](https://www.npmjs.com/package/mozjpeg-neo)
 [![license](https://img.shields.io/npm/l/mozjpeg-neo.svg)](https://github.com/llcawc/mozjpeg-neo/blob/main/license)
+[![Node.js Support](https://img.shields.io/node/v/mozjpeg-neo.svg?style=flat&logo=node.js)](package.json)
+[![Downloads](https://img.shields.io/npm/dm/mozjpeg-neo.svg?style=flat&logo=npm)](https://www.npmjs.com/package/mozjpeg-neo)
 
 > Fork of [imagemin/mozjpeg-bin](https://github.com/imagemin/mozjpeg-bin) with improvements and support for modern Node.js versions.
 
